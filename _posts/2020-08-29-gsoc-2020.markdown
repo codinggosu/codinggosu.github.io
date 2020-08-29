@@ -25,6 +25,9 @@ categories: gsoc
   3. Ensuring correctness with large scale, distributed testing
 - Autocaching needs to be completed with actual caching and ensuring correctness and efficiency improvement with the addition of caching
 
+#### Summary:
+- code merged: apart from some basic initial contribution, main feature such as spill/cache is still being tested before merging 
+
 ##### GitHub: link to my contribution code can be found in [here][github]
 ##### Jira: link to [Jira][jira]
 ##### Master Repo: link to [master repo][master]
