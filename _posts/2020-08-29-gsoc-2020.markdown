@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "GSoC Review"
+date:   2020-08-29 22:00:52 +0900
+categories: gsoc
+---
+### Summary of Original Goals
+
+- spilling: nemo lacked a spilling mechanism to spill data to disk when there wasn't enough memory, implementing a spill function for nemo would prevent certain OOMs
+
+- caching: allowing the user to program applications without explicitly specifying which data to cache would be beneficial, an autocaching feature can also help achieve better efficiency
+
+#### What is Done
+
+- The block spill feature has been implemented with unit tests/default integration tests completed
+  
+- The autocaching feature has been partially implemented with design on how to identify identical and reusable edges
+
+
+#### TODO
+- The block spill feature currently has certain shortcomings such as spilling an entire block to disk. Augmenting this with features such as: 
+
+  1. creation of a new type of block i.e. `HybridBlock` that has data in both disk and memory
+  2. Better handling of distributed states such as machine failure during spill, picking up from failed states, etc
+  3. Ensuring correctness with large scale, distributed testing
+- Autocaching needs to be completed with actual caching and ensuring correctness and efficiency improvement with the addition of caching
+
+##### GitHub: link to my contribution code can be found in [here][github]
+##### Jira: link to [Jira][jira]
+##### Master Repo: link to [master repo][master]
+
+
+[github]: https://github.com/codinggosu/incubator-nemo
+[jira]:   hhttps://issues.apache.org/jira/projects/NEMO/issues/NEMO-443
+[master]: https://github.com/apache/incubator-nemo
+
