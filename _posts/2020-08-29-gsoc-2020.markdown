@@ -31,6 +31,6 @@ categories: gsoc
 
 
 [github]: https://github.com/codinggosu/incubator-nemo
-[jira]:   hhttps://issues.apache.org/jira/projects/NEMO/issues/NEMO-443
+[jira]:   https://issues.apache.org/jira/projects/NEMO/issues/NEMO-443
 [master]: https://github.com/apache/incubator-nemo
 
